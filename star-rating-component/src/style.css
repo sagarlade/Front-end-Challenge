@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Serif', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dedaf5;
+}
+.box{
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgb(236, 235, 236) 6px 6px;
+}
+.start-text{
+  font-size: 1.4rem;
+  line-height: 30px;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+}
+.rating-container {
+  text-align: center;
+}
+
+.stars {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.star::before {
+  content: "\2605";
+  display: inline-block;
+  color: rgb(175, 175, 175);
+}
+
+.star.active::before {
+  content: "\2605";
+  color: gold;
+}
+
+.message {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+  width: 80%;
+  margin: 1rem auto;
+}
